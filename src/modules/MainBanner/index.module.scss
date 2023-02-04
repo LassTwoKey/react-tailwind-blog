@@ -1,0 +1,29 @@
+.parent {
+  @apply bg-banner bg-center bg-no-repeat bg-cover;
+  .mainBlock {
+    @apply max-w-md py-32 max-md:py-28;
+  }
+
+  .mainBlockHeader {
+    @apply font-rajdhani font-bold text-6xl mb-6 max-md:text-3xl;
+  }
+
+  .mainBlockTyped {
+    @apply font-rajdhani font-medium text-4xl mb-6 max-md:text-base;
+  }
+
+  .mainBlockText {
+    @apply max-md:text-base mb-6;
+  }
+
+  .soc {
+    @apply flex gap-x-2.5 max-md:justify-center;
+  }
+
+  .socIcons {
+    @apply w-11 h-11 flex justify-center items-center bg-darkGray rounded-md duration-150;
+    &:hover {
+      @apply bg-yellow-500;
+    }
+  }
+}
