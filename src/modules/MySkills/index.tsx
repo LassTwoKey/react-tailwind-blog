@@ -1,54 +1,85 @@
 import { FC } from 'react'
 
+import cn from 'classnames'
+
+import { Button } from '@ui/Button'
 import { Container } from '@ui/Container'
+import { SectionTitle } from '@ui/SectionTitle'
+import { Typography } from '@ui/Typography'
 
 import styles from './index.module.scss'
 
-export const MainBanner: FC = () => {
+export const MySkills: FC = () => {
   const skills = [
     {
       id: 's1',
       name: 'Web Design',
-      percent: 90
+      percent: 90,
+      width: 'w-11/12'
     },
     {
       id: 's2',
       name: 'Photoshoot',
-      percent: 80
+      percent: 80,
+      width: 'w-4/5'
     },
     {
       id: 's3',
       name: 'Web Development',
-      percent: 87
+      percent: 83,
+      width: 'w-10/12'
     },
     {
       id: 's4',
       name: 'Time Management',
-      percent: 78
+      percent: 75,
+      width: 'w-9/12'
     },
     {
       id: 's5',
       name: 'Coding',
-      percent: 71
+      percent: 60,
+      width: 'w-3/5'
     }
   ]
   return (
     <section className={styles.parent}>
       <Container>
-        {/* <div className={styles.mainBlock}>
-          <h1 className={styles.mainBlockHeader}>Hi I&#39;m Sen Maxuale</h1>
-          <p className={styles.mainBlockTyped}>🔥WEB DESIGNE RPUBLI|</p>
-          <p className={styles.mainBlockText}>
-            Hello i&#39;m Sen Maxuale, wb designer and photography, public figure. welcome to my
-            website, i am best photography and designer, I am happy with my work, you have any help
-            please let me know
-          </p>
-          <div className={styles.soc}>
-            {socMedia.map((item) => (
-              <a key={item.id} href={item.link} className={cn(item.sprite, styles.socIcons)}></a>
-            ))}
+        <SectionTitle subTitle='MY SKILL' title='My Skill' center />
+        <div className={styles.row}>
+          <div className={styles.block}>
+            <Typography tag='h3' className={styles.blockTitle}>
+              Every Day is a New Challenge
+            </Typography>
+            <Typography tag='p' className={styles.blockText}>
+              There are many variations of passages of Lorem Ipsum available, but the majority have
+              suffered alteration in some form, by injected humour, or randomised words which don’t
+              look even slightly believable.
+            </Typography>
+            <Typography tag='p' className={styles.blockText}>
+              Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a
+              piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard
+              McClintock, a Latin professor at Hampden.
+            </Typography>
+            <Button type='filling' className={styles.blockButton}>
+              READ MORE
+            </Button>
           </div>
-        </div> */}
+          <ul className={styles.stats}>
+            {skills.map((item) => (
+              <li key={item.id} className={styles.item}>
+                <Typography tag='p' className={styles.itemName}>
+                  <span>{item.name}</span>
+                </Typography>
+                <div className={styles.bar}>
+                  <div className={cn(styles.progress, item.width)}>
+                    <span className={styles.percent}>{item.percent}%</span>
+                  </div>
+                </div>
+              </li>
+            ))}
+          </ul>
+        </div>
       </Container>
     </section>
   )

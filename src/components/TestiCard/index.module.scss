@@ -1,0 +1,35 @@
+.parent {
+  @apply relative pt-20;
+
+  .cardContent {
+    @apply relative pt-28 pb-7 px-7 border-4 border-yellow-500 rounded-lg overflow-hidden
+		after:content-['"'] after:text-yellow-500 after:text-9xl after:absolute after:-bottom-16 after:right-0 
+		after:rotate-45 after:-translate-x-12 after:-translate-y-6 
+		before:block before:absolute before:inset-0 before:h-96 before:rotate-110 before:bg-darkenYellow
+		max-sm:before:rotate-0;
+  }
+
+  .cardImg {
+    @apply flex justify-center absolute left-1/2 -translate-x-1/2 -inset-0 pointer-events-none z-10;
+    .img {
+      @apply inline-block h-40 w-40 border-2 border-yellow-600 rounded-sm;
+    }
+  }
+
+  .devider {
+    @apply flex justify-center py-6;
+    span {
+      @apply inline-block w-7 h-1 bg-yellow-500 last:bg-white;
+    }
+  }
+
+  .cardText {
+    @apply text-center relative z-10;
+    p {
+      @apply italic;
+    }
+    h4 {
+      @apply text-yellow-500 mb-1;
+    }
+  }
+}

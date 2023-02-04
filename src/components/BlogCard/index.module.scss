@@ -1,0 +1,20 @@
+.parent {
+  @apply relative rounded-lg overflow-hidden max-w-390px;
+
+  .text {
+    @apply p-5 bg-slaty;
+
+    p {
+      @apply mb-3;
+    }
+    h4 {
+      @apply relative
+		before:absolute before:-inset-x-4 -translate-x-1 before:h-full before:w-2px before:bg-yellow-500 
+		duration-150 hover:text-yellow-500;
+    }
+
+    .itemBtn {
+      @apply mt-6;
+    }
+  }
+}

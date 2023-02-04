@@ -1,0 +1,7 @@
+.parent {
+  @apply bg-grayer py-24 max-md:py-12;
+
+  .row {
+    @apply mt-10 max-md:mt-5 flex;
+  }
+}

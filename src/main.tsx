@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom/client'
 import { RouterProvider } from 'react-router-dom'
 
 import 'normalize.css'
+import 'swiper/scss'
 
 import router from './routes'
 import './styles/index.scss'
