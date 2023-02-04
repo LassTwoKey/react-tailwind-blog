@@ -1,0 +1,17 @@
+.parent {
+  &.h1 {
+    @apply font-rajdhani font-bold text-6xl max-md:text-3xl;
+  }
+  &.h2 {
+    @apply font-rajdhani text-6xl font-bold max-md:text-3xl;
+  }
+  &.h3 {
+    @apply text-2xl font-bold max-md:text-xl;
+  }
+  &.h4 {
+    @apply text-xl font-semibold max-md:text-base;
+  }
+  &.p {
+    @apply max-md:text-base;
+  }
+}

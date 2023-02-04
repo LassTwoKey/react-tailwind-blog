@@ -5,6 +5,7 @@ import cn from 'classnames'
 import { Button } from '@ui/Button'
 import { Container } from '@ui/Container'
 import { SectionTitle } from '@ui/SectionTitle'
+import { Typography } from '@ui/Typography'
 
 import styles from './index.module.scss'
 
@@ -54,8 +55,12 @@ export const Services: FC = () => {
           {services.map((service) => (
             <div key={service.id} className={styles.item}>
               <div className={cn(service.sprite, styles.sprite)}></div>
-              <h3 className={styles.itemTitle}>{service.title}</h3>
-              <p className={styles.itemText}>{service.text}</p>
+              <Typography tag='h3' className={styles.itemTitle}>
+                {service.title}
+              </Typography>
+              <Typography tag='p' className={styles.itemText}>
+                {service.text}
+              </Typography>
               <Button to={service.to} className={styles.itemButton}>
                 Read More <span className={styles.itemButtonLine}></span>
               </Button>

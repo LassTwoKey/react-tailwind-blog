@@ -2,6 +2,8 @@ import { FC } from 'react'
 
 import cn from 'classnames'
 
+import { Typography } from '@ui/Typography'
+
 import styles from './index.module.scss'
 
 type SectionTitle = {
@@ -29,13 +31,17 @@ export const SectionTitle: FC<SectionTitle> = (props) => {
   return (
     <div className={cn(styles.parent, { 'text-center': center }, className)}>
       {subTitle && (
-        <h3 className={cn(styles.subTitle, { 'justify-center': center })}>
+        <Typography tag='h3' className={cn(styles.subTitle, { 'justify-center': center })}>
           {isLeft && <span className={styles.itemButtonLine} />}
           {subTitle}
           {isRight && <span className={styles.itemButtonLine} />}
-        </h3>
+        </Typography>
       )}
-      {title && <h2 className={styles.title}>{title}</h2>}
+      {title && (
+        <Typography tag='h2' className={styles.title}>
+          {title}
+        </Typography>
+      )}
     </div>
   )
 }
