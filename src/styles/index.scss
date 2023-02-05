@@ -4,6 +4,7 @@
 
 @import 'includes/swiper';
 @import 'includes/icon-fonts';
+@import 'includes/loader';
 
 html,
 body {
@@ -20,6 +21,13 @@ body {
   flex-direction: column;
   height: 100%;
 }
-main {
+main,
+.loader {
   flex: 1 1 auto;
+}
+
+body {
+  &.lock {
+    overflow-y: hidden;
+  }
 }

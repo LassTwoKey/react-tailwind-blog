@@ -6,6 +6,7 @@ import { Button } from '@ui/Button'
 import { Container } from '@ui/Container'
 import { IconMenu } from '@ui/IconMenu'
 
+import { PATHS } from '../../constants'
 import { HEADER_MENU } from '../../constants'
 import styles from './index.module.scss'
 
@@ -14,10 +15,10 @@ export const Header: FC = () => {
   return (
     <header className={styles.parent}>
       <Container className={styles.container}>
-        <Button className={styles.logoButton}>
+        <Button className={styles.logoButton} to={PATHS.home}>
           <span className={styles.logo}>Extra</span>Blog
         </Button>
-        <HeaderMenu list={HEADER_MENU} menuOpen={menuOpen} />
+        <HeaderMenu list={HEADER_MENU} setMenuOpen={setMenuOpen} menuOpen={menuOpen} />
         <IconMenu setMenuOpen={setMenuOpen} isActive={menuOpen} />
         <Button className={styles.qouteButton}>
           <span>Get a Quote</span>

@@ -7,6 +7,7 @@ import { Container } from '@ui/Container'
 import { SectionTitle } from '@ui/SectionTitle'
 import { Typography } from '@ui/Typography'
 
+import { PATHS } from '../../constants'
 import styles from './index.module.scss'
 
 export const MySkills: FC = () => {
@@ -61,7 +62,7 @@ export const MySkills: FC = () => {
               piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard
               McClintock, a Latin professor at Hampden.
             </Typography>
-            <Button type='filling' className={styles.blockButton}>
+            <Button type='filling' className={styles.blockButton} to={PATHS.services}>
               READ MORE
             </Button>
           </div>

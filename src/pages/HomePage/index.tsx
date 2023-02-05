@@ -1,6 +1,5 @@
 import { FC } from 'react'
 
-import { Portfolio } from '@components/Portfolio'
 import { About } from '@modules/About'
 import { BlogArea } from '@modules/BlogArea'
 import { Contact } from '@modules/Contact'
@@ -15,7 +14,6 @@ export const HomePage: FC = () => {
       <MainBanner />
       <Services />
       <About />
-      <Portfolio />
       <MySkills />
       <Testimonial />
       <BlogArea />

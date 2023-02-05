@@ -1,17 +1,28 @@
+export const PATHS = {
+  home: 'home',
+  about: 'about',
+  services: '/services',
+  blog: {
+    grid: 'blog/grid',
+    list: 'blog/list'
+  },
+  contact: 'contact'
+}
+
 export const HEADER_MENU = [
   {
     id: 'm1',
-    to: '/',
+    to: PATHS.home,
     name: 'Home'
   },
   {
     id: 'm2',
-    to: '/',
+    to: PATHS.about,
     name: 'About'
   },
   {
     id: 'm3',
-    to: '/',
+    to: PATHS.services,
     name: 'Services'
   },
   {
@@ -21,18 +32,18 @@ export const HEADER_MENU = [
       {
         id: 'sm2',
         name: 'Blog List',
-        to: '/'
+        to: PATHS.blog.list
       },
       {
         id: 'sm1',
         name: 'Blog Grid',
-        to: '/'
+        to: PATHS.blog.grid
       }
     ]
   },
   {
     id: 'm5',
-    to: '/',
+    to: PATHS.contact,
     name: 'Contact us'
   }
 ]

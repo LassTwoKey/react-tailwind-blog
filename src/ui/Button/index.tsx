@@ -26,8 +26,15 @@ export const Button: FC<ButtonType> = (props) => {
   })
 
   return to ? (
-    <NavLink className={classNames} type='button' to={to}>
-      {children}
+    <NavLink className={classNames} type='button' to={to} onClick={() => onClick && onClick()}>
+      {isFilling ? (
+        <>
+          <span className='relative z-10'>{children}</span>
+          <span className={cn('_icon-arrow relative z-10', styles.buttonIcon)} />
+        </>
+      ) : (
+        children
+      )}
     </NavLink>
   ) : (
     <button className={classNames} onClick={() => onClick && onClick()}>
