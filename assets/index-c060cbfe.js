@@ -1,0 +1,1 @@
+import{j as e,F as a,a as r}from"./index-4ec38dd0.js";import{H as s,F as t}from"./index-42304733.js";import{T as o}from"./index-a275b4a9.js";const c=()=>e(a,{children:[r(s,{}),r("main",{className:"flex justify-center items-center",children:e(o,{tag:"h1",children:["Oops, there was an ",r("span",{className:"text-red-500",children:"error!"})]})}),r(t,{})]});export{c as ErrorPage};

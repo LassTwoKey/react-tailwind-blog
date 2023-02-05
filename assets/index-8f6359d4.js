@@ -1,0 +1,1 @@
+import{a as t}from"./index-4ec38dd0.js";import{C as o}from"./index-6bf7ee0b.js";import"./index-a275b4a9.js";import"./index-86c5153f.js";const n=()=>t("main",{children:t(o,{})});export{n as ContactPage};

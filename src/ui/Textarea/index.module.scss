@@ -1,9 +1,0 @@
-.parent {
-  .textarea {
-    @apply bg-lightGray border-2 border-lightGray h-48
-		outline-none rounded-md py-3 pl-4 duration-200 w-full;
-    &:focus {
-      @apply border-2 border-yellow-500;
-    }
-  }
-}

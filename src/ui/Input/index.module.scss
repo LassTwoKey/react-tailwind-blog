@@ -1,9 +1,0 @@
-.parent {
-  @apply flex-auto;
-  .input {
-    @apply bg-lightGray border-2 border-lightGray outline-none rounded-md py-2 pl-4 duration-200 w-full;
-    &:focus {
-      @apply border-2 border-yellow-500;
-    }
-  }
-}
