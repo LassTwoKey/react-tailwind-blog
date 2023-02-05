@@ -36,3 +36,21 @@ export const HEADER_MENU = [
     name: 'Contact us'
   }
 ]
+
+export const SOC_MEDIA = [
+  {
+    id: 's1',
+    sprite: '_icon-facebook',
+    link: 'https://www.facebook.com/'
+  },
+  {
+    id: 's2',
+    sprite: '_icon-twitter',
+    link: 'https://twitter.com/'
+  },
+  {
+    id: 's3',
+    sprite: '_icon-telegram',
+    link: 'https://telegram.org/'
+  }
+]

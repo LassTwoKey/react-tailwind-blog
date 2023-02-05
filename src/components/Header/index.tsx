@@ -15,7 +15,7 @@ export const Header: FC = () => {
     <header className={styles.parent}>
       <Container className={styles.container}>
         <Button className={styles.logoButton}>
-          <span className={styles.logo}>Cripto</span>Blog
+          <span className={styles.logo}>Extra</span>Blog
         </Button>
         <HeaderMenu list={HEADER_MENU} menuOpen={menuOpen} />
         <IconMenu setMenuOpen={setMenuOpen} isActive={menuOpen} />

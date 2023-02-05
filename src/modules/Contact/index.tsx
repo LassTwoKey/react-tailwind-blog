@@ -1,5 +1,8 @@
 import { FC } from 'react'
 
+import { ContactForm } from '@components/ContactForm'
+import cn from 'classnames'
+
 import { Container } from '@ui/Container'
 import { SectionTitle } from '@ui/SectionTitle'
 import { Typography } from '@ui/Typography'
@@ -15,13 +18,13 @@ export const Contact: FC = () => {
       text: 'Office Address 56/A-102-Middle Point,New York, US'
     },
     {
-      id: 'c1',
+      id: 'c2',
       sprite: '_icon-money',
       title: 'Email Address',
       text: 'info@example.com'
     },
     {
-      id: 'c1',
+      id: 'c3',
       sprite: '_icon-phone',
       title: 'Phone Number',
       text: '088 0245 35487'
@@ -49,9 +52,9 @@ export const Contact: FC = () => {
             </Typography>
             <ul>
               {contacts.map((item) => (
-                <li key={item.id}>
-                  <div className={item.sprite}></div>
-                  <div>
+                <li key={item.id} className={styles.item}>
+                  <div className={cn(item.sprite, styles.sprite)}></div>
+                  <div className={styles.itemtext}>
                     <h4>{item.title}</h4>
                     <Typography tag='p'>{item.text}</Typography>
                   </div>
@@ -59,6 +62,7 @@ export const Contact: FC = () => {
               ))}
             </ul>
           </div>
+          <ContactForm />
         </div>
       </Container>
     </section>

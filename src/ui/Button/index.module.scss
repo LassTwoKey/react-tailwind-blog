@@ -9,4 +9,10 @@
       @apply -rotate-90 inline-flex items-center justify-center;
     }
   }
+  &.common {
+    @apply py-3 px-8 flex justify-center items-center bg-slateGray rounded-md duration-150 font-semibold;
+    &:hover {
+      @apply bg-yellow-500;
+    }
+  }
 }

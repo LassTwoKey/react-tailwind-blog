@@ -1,0 +1,43 @@
+.parent {
+  .navList {
+    @apply flex gap-6 justify-center items-center flex-wrap mb-12 max-sm:gap-3;
+  }
+
+  .navBtn {
+    @apply py-2 px-6 text-sm font-medium;
+  }
+
+  .content {
+    @apply grid grid-cols-3 gap-6 max-lg:grid-cols-2 max-sm:grid-cols-1;
+  }
+
+  .contentItem {
+    @apply relative overflow-hidden
+		after:content-[''] after:top-0 after:left-0 after:z-10 
+		after:absolute after:w-full after:h-full after:scale-0 after:duration-500;
+
+    & img {
+      @apply duration-300;
+    }
+
+    &:hover {
+      @apply after:bg-darkBackdrop after:scale-100;
+      .itemText {
+        @apply opacity-100;
+      }
+      & img {
+        @apply relative overflow-hidden scale-110;
+      }
+    }
+
+    .itemText {
+      @apply absolute w-full h-full inset-0 flex z-20 justify-center items-center opacity-0 duration-150;
+      & > div {
+        @apply text-center;
+      }
+      h3 {
+        @apply hover:text-yellow-500 font-rajdhani duration-150 text-3xl;
+      }
+    }
+  }
+}

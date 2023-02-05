@@ -9,7 +9,7 @@ type ButtonType = {
   children?: React.ReactNode
   className?: string
   to?: string
-  type?: 'filling'
+  type?: 'filling' | 'common'
   onClick?: () => void
 }
 
@@ -17,9 +17,11 @@ export const Button: FC<ButtonType> = (props) => {
   const { children, className, to, type, onClick } = props
 
   const isFilling = type === 'filling'
+  const isCommon = type === 'common'
 
   const classNames = cn(styles.parent, {
     [styles.filling]: isFilling,
+    [styles.common]: isCommon,
     [className as string]: className
   })
 

@@ -1,0 +1,32 @@
+.parent {
+  @apply bg-slateGray text-center py-12;
+
+  .footerTop {
+    // @apply divide-y;
+  }
+
+  .footerLogo {
+    @apply text-6xl font-rajdhani font-bold mb-6;
+    span {
+      @apply text-yellow-500;
+    }
+  }
+  .text {
+    @apply max-w-xl mx-auto;
+  }
+
+  .list {
+    @apply flex gap-5 justify-center py-6;
+  }
+
+  .socIcons {
+    @apply hover:text-yellow-500 text-lg duration-150;
+  }
+
+  .copy {
+    @apply pt-4;
+    span {
+      @apply text-yellow-500;
+    }
+  }
+}
