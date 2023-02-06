@@ -1,0 +1,21 @@
+.parent {
+  @apply bg-breadcumb py-52 bg-center bg-no-repeat bg-cover 
+	max-lg:py-44 max-md:py-24 max-sm:py-20;
+
+  .content {
+    @apply text-center;
+    h1 {
+      @apply mb-6 max-md:mb-2;
+    }
+  }
+
+  .breadcumb {
+    @apply flex gap-2 justify-center items-center;
+    span {
+      @apply -rotate-90 text-xs;
+    }
+  }
+  .button {
+    @apply hover:text-yellow-500 duration-150;
+  }
+}

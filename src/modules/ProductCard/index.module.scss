@@ -1,0 +1,19 @@
+.parent {
+  @apply bg-darker py-24 max-md:py-12;
+
+  .card {
+    @apply bg-grayer rounded-md flex justify-between gap-8 p-16 shadow-item max-w-4xl max-lg:flex-col 
+		max-lg:p-12 max-md:p-8;
+  }
+
+  .img {
+    @apply w-80 max-lg:w-full;
+  }
+
+  .list {
+    @apply divide-y-2 mt-2;
+  }
+  .item {
+    @apply flex gap-3 py-4 text-lg;
+  }
+}

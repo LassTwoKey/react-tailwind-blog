@@ -10,21 +10,26 @@ type BlogCardProps = {
   time: string
   title: string
   to: string
+  isBlog?: boolean
 }
 
 export const BlogCard: FC<BlogCardProps> = (props) => {
-  const { img, time, title, to } = props
+  const { img, time, title, to, isBlog } = props
   return (
     <div className={styles.parent}>
-      <img src={img} alt='img' />
+      <Button className={styles.linkImg} to={to}>
+        <img src={img} alt='img' />
+      </Button>
       <div className={styles.text}>
         <Typography tag='p'>{time}</Typography>
         <Button to={to}>
           <Typography tag='h4'>{title}</Typography>
         </Button>
-        <Button className={styles.itemBtn} type='filling'>
-          READ MORE
-        </Button>
+        {!isBlog && (
+          <Button to={to} className={styles.itemBtn} type='filling'>
+            READ MORE
+          </Button>
+        )}
       </div>
     </div>
   )

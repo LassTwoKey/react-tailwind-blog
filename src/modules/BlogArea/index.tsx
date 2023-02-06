@@ -18,28 +18,28 @@ export const BlogArea: FC = () => {
       img: '/img/blog1.jpg',
       time: 'February 15, 2023',
       title: 'At Least Once In Your Lifetime And Here’s',
-      to: '/'
+      to: '/post-details'
     },
     {
       id: 'b2',
       img: '/img/blog2.jpg',
       time: 'February 14, 2023',
       title: 'At Least Once In Your Lifetime And Here’s',
-      to: '/'
+      to: '/post-details'
     },
     {
       id: 'b3',
       img: '/img/blog3.jpg',
       time: 'February 13, 2023',
       title: 'The Most Of Popular Techno Website',
-      to: '/'
+      to: '/post-details'
     },
     {
       id: 'b4',
       img: '/img/blog4.jpg',
       time: 'February 12, 2023',
       title: 'At Least Once In Your Lifetime And Here’s',
-      to: '/'
+      to: '/post-details'
     }
   ]
   return (

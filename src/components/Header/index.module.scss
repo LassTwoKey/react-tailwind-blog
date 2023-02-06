@@ -1,6 +1,7 @@
 .parent {
   @apply z-40 flex
-  before:block before:absolute before:inset-0 before:bg-dark before:h-16 max-md:before:h-12 before:z-20;
+	absolute inset-0 max-h-fit;
+  // before:block before:absolute before:inset-0 before:bg-dark before:h-16 max-md:before:h-12 before:z-20
 
   .container {
     @apply flex justify-between items-center h-16 max-md:h-12;

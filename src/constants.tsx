@@ -6,7 +6,9 @@ export const PATHS = {
     grid: 'blog/grid',
     list: 'blog/list'
   },
-  contact: 'contact'
+  contact: 'contact',
+  product: 'product',
+  postDetails: 'post-details'
 }
 
 export const HEADER_MENU = [

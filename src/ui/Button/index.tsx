@@ -26,7 +26,7 @@ export const Button: FC<ButtonType> = (props) => {
   })
 
   return to ? (
-    <NavLink className={classNames} type='button' to={to} onClick={() => onClick && onClick()}>
+    <NavLink className={classNames} to={to} onClick={() => onClick && onClick()}>
       {isFilling ? (
         <>
           <span className='relative z-10'>{children}</span>

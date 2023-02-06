@@ -25,7 +25,8 @@
       "@ui/*": ["./src/ui/*"],
       "@assets/*": ["./src/assets/*"],
       // "@types/*": ["./src/types/*"]
-      "@types": ["./src/@types/*"]
+      "@types": ["./src/@types/*"],
+      "@helpers/*": ["./src/helpers/*"]
     }
   },
   "include": ["src"],

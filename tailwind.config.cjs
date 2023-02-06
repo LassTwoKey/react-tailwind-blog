@@ -24,7 +24,8 @@ module.exports = {
 			},
 			backgroundImage: {
 				'banner': 'url("/img/banner-image.jpg")',
-				'item': 'linear-gradient(360deg, rgb(10 10 19 / 98%), rgb(17 22 31 / 80%))'
+				'item': 'linear-gradient(360deg, rgb(10 10 19 / 98%), rgb(17 22 31 / 80%))',
+				'breadcumb': 'url("/img/bann.jpg")'
 			},
 			boxShadow: {
 				'item': '0px 0 2px rgb(2 3 18)',

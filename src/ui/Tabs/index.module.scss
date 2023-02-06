@@ -23,7 +23,7 @@
     &:hover {
       @apply after:bg-darkBackdrop after:scale-100;
       .itemText {
-        @apply opacity-100;
+        @apply opacity-100 z-20;
       }
       & img {
         @apply relative overflow-hidden scale-110;
@@ -31,7 +31,7 @@
     }
 
     .itemText {
-      @apply absolute w-full h-full inset-0 flex z-20 justify-center items-center opacity-0 duration-150;
+      @apply absolute w-full h-full inset-0 flex justify-center items-center opacity-0 duration-150;
       & > div {
         @apply text-center;
       }

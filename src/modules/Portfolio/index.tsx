@@ -17,42 +17,42 @@ export const Portfolio: FC = () => {
           subtitle: 'Graphics design',
           title: 'Shaker Mockup',
           img: '/img/p2.jpg',
-          to: '/'
+          to: '/product'
         },
         {
           id: 'w2',
           subtitle: 'Graphics design',
           title: 'Product Marketing',
           img: '/img/p3.jpg',
-          to: '/'
+          to: '/product'
         },
         {
           id: 'w3',
           subtitle: 'Graphics design',
           title: 'Logo Designer',
           img: '/img/p4.jpg',
-          to: '/'
+          to: '/product'
         },
         {
           id: 'w4',
           subtitle: 'Graphics design',
           title: 'Globe Design',
           img: '/img/p5.jpg',
-          to: '/'
+          to: '/product'
         },
         {
           id: 'w5',
           subtitle: 'Graphics design',
           title: 'Shopping Mohole',
           img: '/img/p8.jpg',
-          to: '/'
+          to: '/product'
         },
         {
           id: 'w6',
           subtitle: 'Graphics design',
           title: 'Digital Agency',
           img: '/img/p2.jpg',
-          to: '/'
+          to: '/product'
         }
       ]
     },
@@ -65,14 +65,14 @@ export const Portfolio: FC = () => {
           subtitle: 'Graphics design',
           title: 'Shaker Mockup',
           img: '/img/p4.jpg',
-          to: '/'
+          to: '/product'
         },
         {
           id: 'w4',
           subtitle: 'Graphics design',
           title: 'Shopping Mohole',
           img: '/img/p5.jpg',
-          to: '/'
+          to: '/product'
         }
       ]
     },
@@ -85,14 +85,14 @@ export const Portfolio: FC = () => {
           subtitle: 'Graphics design',
           title: 'Shopping Mohole',
           img: '/img/p8.jpg',
-          to: '/'
+          to: '/product'
         },
         {
           id: 'w6',
           subtitle: 'Graphics design',
           title: 'Digital Agency',
           img: '/img/p2.jpg',
-          to: '/'
+          to: '/product'
         }
       ]
     },
@@ -105,21 +105,21 @@ export const Portfolio: FC = () => {
           subtitle: 'Graphics design',
           title: 'Shaker Mockup',
           img: '/img/p2.jpg',
-          to: '/'
+          to: '/product'
         },
         {
           id: 'w3',
           subtitle: 'Graphics design',
           title: 'Logo Designer',
           img: '/img/p4.jpg',
-          to: '/'
+          to: '/product'
         },
         {
           id: 'w4',
           subtitle: 'Graphics design',
           title: 'Globe Design',
           img: '/img/p5.jpg',
-          to: '/'
+          to: '/product'
         }
       ]
     }
