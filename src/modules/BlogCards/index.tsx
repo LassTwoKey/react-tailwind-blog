@@ -14,7 +14,7 @@ type BlogCardsProps = {
 export const BlogCards: FC<BlogCardsProps> = (props) => {
   const { items } = props
   return (
-    <div className={styles.parent}>
+    <section className={styles.parent}>
       <Container className={styles.blogs}>
         {items.map((item) => (
           <BlogCard
@@ -27,6 +27,6 @@ export const BlogCards: FC<BlogCardsProps> = (props) => {
           />
         ))}
       </Container>
-    </div>
+    </section>
   )
 }

@@ -7,7 +7,12 @@ import { Typography } from '@ui/Typography'
 
 import styles from './index.module.scss'
 
-export const ContactForm: FC = () => {
+type ContactFormProps = {
+  formTitle: string
+}
+
+export const ContactForm: FC<ContactFormProps> = (props) => {
+  const { formTitle } = props
   const [name, setName] = useState<string>('')
   const [email, setEmail] = useState<string>('')
   const [phone, setPhone] = useState<string>('')
@@ -30,7 +35,7 @@ export const ContactForm: FC = () => {
   }
   return (
     <div className={styles.parent}>
-      <Typography tag='h3'>Contact Us</Typography>
+      <Typography tag='h3'>{formTitle}</Typography>
       <form action='#' onSubmit={onSumbitHandler}>
         <div className={styles.formItem}>
           <Input placeholder='Name' value={name} setValue={setName} />

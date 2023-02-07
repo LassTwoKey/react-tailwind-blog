@@ -99,7 +99,15 @@ const router = createBrowserRouter([
         path: PATHS.blog.grid,
         element: (
           <Suspense fallback={<Loader />}>
-            <BlogPage />
+            <BlogPage type='grid' title='Blog Grid' />
+          </Suspense>
+        )
+      },
+      {
+        path: PATHS.blog.list,
+        element: (
+          <Suspense fallback={<Loader />}>
+            <BlogPage type='list' title='Blog List' />
           </Suspense>
         )
       }

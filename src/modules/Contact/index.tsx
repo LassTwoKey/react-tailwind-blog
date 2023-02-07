@@ -62,7 +62,7 @@ export const Contact: FC = () => {
               ))}
             </ul>
           </div>
-          <ContactForm />
+          <ContactForm formTitle='Contact Us' />
         </div>
       </Container>
     </section>

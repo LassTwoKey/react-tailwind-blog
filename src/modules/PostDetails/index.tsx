@@ -1,4 +1,4 @@
-import { FC } from 'react'
+import React, { FC } from 'react'
 
 import { TextBlock } from '@ui/TextBlock'
 import { Typography } from '@ui/Typography'
@@ -65,15 +65,21 @@ export const PostDetails: FC = () => {
   }
   return (
     <article className={styles.parent}>
-      <img src={details.img} alt='' />
-      <Typography tag='p'>{details.date}</Typography>
-      {details.content.map((item) => (
-        <div key={item.id}>
-          {item.isimg && <TextBlock img={item.source} />}
-          {item.isTitle && <TextBlock title={item.source} />}
-          {item.isText && <TextBlock text={item.source} />}
-        </div>
-      ))}
+      <div className={styles.mainImg}>
+        <img src={details.img} alt='' />
+      </div>
+      <div className={styles.content}>
+        <Typography tag='p' className={styles.date}>
+          {details.date}
+        </Typography>
+        {details.content.map((item) => (
+          <React.Fragment key={item.id}>
+            {item.isimg && <TextBlock img={item.source} />}
+            {item.isTitle && <TextBlock className='font-rajdhani' title={item.source} />}
+            {item.isText && <TextBlock text={item.source} />}
+          </React.Fragment>
+        ))}
+      </div>
     </article>
   )
 }

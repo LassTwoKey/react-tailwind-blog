@@ -1,5 +1,7 @@
 import { FC } from 'react'
 
+import cn from 'classnames'
+
 import { Typography } from '@ui/Typography'
 
 import styles from './index.module.scss'
@@ -8,12 +10,13 @@ type TextBlockProps = {
   title?: string
   text?: string
   img?: string
+  className?: string
 }
 
 export const TextBlock: FC<TextBlockProps> = (props) => {
-  const { title, text, img } = props
+  const { title, text, img, className } = props
   return (
-    <div className={styles.parent}>
+    <div className={cn(styles.parent, className)}>
       {title && (
         <Typography tag='h3' className={styles.title}>
           {title}

@@ -35,7 +35,7 @@ module.exports = {
 				'110': '110deg'
 			},
 			width: {
-				'2px': '2px',
+				'2px': '2px'
 			},
 			maxWidth: {
 				'390px': '390px'

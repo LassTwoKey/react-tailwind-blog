@@ -1,0 +1,26 @@
+.parent {
+  @apply divide-y-2 first:divide-x-0 px-6 py-2 bg-slaty rounded-md max-md:p-0 max-md:bg-transparent;
+  .item {
+    & > * {
+      @apply flex gap-3 py-4;
+    }
+
+    img {
+      @apply h-16;
+    }
+
+    h3 {
+      @apply text-sm font-semibold font-rajdhani mb-1 duration-150;
+    }
+
+    p {
+      @apply text-xs text-zinc-500;
+    }
+
+    &:hover {
+      h3 {
+        @apply text-yellow-500;
+      }
+    }
+  }
+}

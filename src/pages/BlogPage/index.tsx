@@ -1,9 +1,16 @@
 import { FC } from 'react'
 
+import { BlogLayout } from '@components/BlogLayout'
 import { BlogCards } from '@modules/BlogCards'
 import { BreadcumbArea } from '@modules/BreadcumbArea'
 
-export const BlogPage: FC = () => {
+type BlogPageProps = {
+  type: 'list' | 'grid'
+  title: string
+}
+
+export const BlogPage: FC<BlogPageProps> = (props) => {
+  const { type, title } = props
   const cards = [
     {
       id: 'b1',
@@ -50,8 +57,17 @@ export const BlogPage: FC = () => {
   ]
   return (
     <main>
-      <BreadcumbArea breadcumbs='Blog Grid' />
-      <BlogCards items={cards} />
+      <BreadcumbArea breadcumbs={title} />
+      {type === 'list' && (
+        <BlogLayout
+          content={
+            <>
+              <p>Some text content be here...</p>
+            </>
+          }
+        />
+      )}
+      {type === 'grid' && <BlogCards items={cards} />}
     </main>
   )
 }

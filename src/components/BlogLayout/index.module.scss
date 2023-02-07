@@ -1,0 +1,21 @@
+.parent {
+  @apply bg-grayer py-24 max-md:py-12;
+
+  .container {
+    @apply flex gap-6 max-lg:flex-col;
+  }
+
+  .main {
+    @apply flex-auto;
+  }
+
+  .aside {
+    @apply flex-[0_0_20rem] max-lg:flex-[1_1_auto];
+    & > * {
+      @apply mb-6 last:mb-0 max-lg:last:hidden;
+    }
+    & > h3 {
+      @apply max-lg:mt-6;
+    }
+  }
+}

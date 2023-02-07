@@ -1,3 +1,21 @@
 .parent {
-  @apply bg-grayer py-24 max-md:py-12;
+  @apply mb-24 max-md:mb-12;
+
+  .mainImg {
+    @apply rounded-t-md overflow-hidden;
+    img {
+      @apply w-full;
+    }
+  }
+
+  .date {
+    @apply mb-4 font-medium;
+  }
+
+  .content {
+    @apply p-6 bg-slaty rounded-b-md;
+    img {
+      @apply w-full;
+    }
+  }
 }
