@@ -63,7 +63,7 @@ export const HeaderMenu: FC<HeaderMenu> = (props) => {
                       <li className={styles.subMenuItem} key={subItem.id}>
                         <Button
                           className={styles.subMenuButton}
-                          // onClick={closeMenu}
+                          onClick={closeMenu}
                           to={subItem.to}
                         >
                           {subItem.name}

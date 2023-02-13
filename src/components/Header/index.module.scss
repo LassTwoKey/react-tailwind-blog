@@ -1,6 +1,6 @@
 .parent {
   @apply z-40 flex
-	absolute inset-0 max-h-fit;
+	fixed inset-0 max-h-fit;
   // before:block before:absolute before:inset-0 before:bg-dark before:h-16 max-md:before:h-12 before:z-20
 
   .container {
@@ -17,5 +17,20 @@
 
   .qouteButton {
     @apply font-rajdhani rounded-lg py-2 px-4 border-2 border-white z-20 max-lg:hidden;
+  }
+
+  &.visible {
+    transition: top 0.2s ease-out;
+    @apply top-0;
+  }
+
+  &.hidden {
+    transition: top 0.2s ease-out;
+    @apply -top-16 max-md:-top-12;
+  }
+
+  &.bg {
+    transition: all 0.2s ease-out;
+    @apply bg-dark;
   }
 }
